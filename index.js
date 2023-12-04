@@ -26,7 +26,7 @@ app.use(MainRouter)
 
 app.use(errorHandlerMiddleware)
 
-const PORT = process.env.PORT || '5001'
+const PORT = process.env.PORT || '5001' || '5002' || '5003' || '5004'
 app.set('port', PORT)
 var server = http.createServer(app)
 server.on('listening', () => console.log('APP IS RUNNING ON PORT ' + PORT))
